@@ -2,8 +2,6 @@
 require_relative 'services/single_postcode_service'
 require_relative 'services/multiple_postcodes_service'
 
-
-
 #superclass
 class Postcodesio
 
