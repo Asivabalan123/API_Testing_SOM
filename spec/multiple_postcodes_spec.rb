@@ -19,12 +19,32 @@ describe MultiplePostcodesService do
       expect(@multiple_postcodes_service.get_second_query).to be_kind_of String
     end
 
-    it "should return an integer for quantity" do
+    it "should return an integer value for quantity" do
       expect(@multiple_postcodes_service.get_quality).to be_kind_of Integer
     end
 
-    it "should return an integer for eastings" do
+    it "should return an integer value for eastings" do
       expect(@multiple_postcodes_service.get_eastings).to be_kind_of Integer
     end
 
-end
+    it "should return an integer value for northings" do
+      expect(@multiple_postcodes_service.get_northings).to be_kind_of Integer
+    end
+
+    it "should return a string for country" do
+      expect(@multiple_postcodes_service.get_country).to be_kind_of String
+    end
+
+    it "should return a string for nhs_ha" do
+      expect(@multiple_postcodes_service.get_nhs_ha).to be_kind_of String
+    end
+
+    it "should return a float value for longitude" do
+      expect(@multiple_postcodes_service.get_longitude).to be_kind_of Float
+    end
+
+    it "should return a float value for latitude" do
+      expect(@multiple_postcodes_service.get_latitude).to be_kind_of Float
+    end
+
+  end

@@ -78,4 +78,5 @@ describe SinglePostcodeService do
   it "should return a incode string of 3-4 characters" do
     expect(@postcodesio.get_incode.length).to be_between(3,4).inclusive
   end
+  
  end
