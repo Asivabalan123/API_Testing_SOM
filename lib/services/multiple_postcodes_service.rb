@@ -15,4 +15,8 @@ class MultiplePostcodesService
     @multiple_postcodes_data['status']
   end
 
+  def get_results
+    @multiple_postcode_data['result']
+  end
+
 end

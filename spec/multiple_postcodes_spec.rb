@@ -13,6 +13,6 @@ describe MultiplePostcodesService do
   end
 
   it 'should have a results hash' do
-    # expect(@single_postcode_service.get_results).to be_kind_of Hash
+    expect(@single_postcode_service.get_results).to be_kind_of Hash
   end
 end
