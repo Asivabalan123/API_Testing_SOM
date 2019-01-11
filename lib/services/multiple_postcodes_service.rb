@@ -15,4 +15,21 @@ class MultiplePostcodesService
     @multiple_postcodes_data['status']
   end
 
+  def get_first_query
+    @multiple_postcodes_data["result"][0]["query"]
+  end
+
+  def get_second_query
+    @multiple_postcodes_data["result"][1]["query"]
+  end
+
+  def get_quality
+    @multiple_postcodes_data["result"][0]["result"]["quality"]
+  end
+
+  def get_eastings
+    @multiple_postcodes_data["result"][0]["result"]["eastings"]
+  end
+
+
 end
