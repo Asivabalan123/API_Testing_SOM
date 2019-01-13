@@ -31,5 +31,24 @@ class MultiplePostcodesService
     @multiple_postcodes_data["result"][0]["result"]["eastings"]
   end
 
+  def get_northings
+    @multiple_postcodes_data["result"][0]["result"]["northings"]
+  end
+
+  def get_country
+    @multiple_postcodes_data["result"][0]["result"]["country"]
+  end
+
+  def get_nhs_ha
+    @multiple_postcodes_data["result"][0]["result"]["nhs_ha"]
+  end
+
+  def get_longitude
+    @multiple_postcodes_data["result"][0]["result"]["longitude"]
+  end
+
+  def get_latitude
+    @multiple_postcodes_data["result"][0]["result"]["latitude"]
+  end
 
 end
